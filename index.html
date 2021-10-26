@@ -1,81 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ajout du fichier script -->
-    <script src="script.js"></script>
+    
     <title>BR Architects</title>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav>
-            <div id="logo">
-                <span class="gras">BR</span> ARCHITECTS
-            </div>
-            <ul>
-               <li><a href="">Projects</a></li> 
-                <a href="">About</a>
-                <a href="">Contact</a>
-            </ul>
-        </nav>
-        <div id="imgHeader">
-            <h1>
-                <span class="gras fondDark">BR</span> ARCHITECTS
-            </h1>
-        </div>
+      <nav>
+        <div id="logo"><span class="gras">BR</span> ARCHITECTS</div>
+        <ul>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <!--------------- carrousel ------------------>
+     <div class="carrousel">
+        <div class="imgHeader mySlides">
+            <img src="img/Chute.jfif" alt="" />
+            <h1><span class="gras fondDark">BR</span> ARCHITECTS</h1>
+          </div>
+          <div class="imgHeader mySlides">
+            <img src="img/thunderstorm.jpg" alt="" />
+            <h1><span class="gras fondDark">BR</span> ARCHITECTS</h1>
+          </div>
+          <div class="imgHeader mySlides">
+            <img src="img/Tokyo Paysage 03.jpg" alt="" />
+            <h1><span class="gras fondDark">BR</span> ARCHITECTS</h1>
+          </div>
+          <a class="prev plus" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next plus" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+     <div class="points">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
     </header>
     <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <hr>
-            <div id="imgCards">
-                <!-- (figure>(img+figcaption))*8 raccourci Emmet-->
-                <figure>
-                    <img src="img/house2.jpg" alt="">
-                    <figcaption>Summer House</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/house3.jpg" alt="">
-                    <figcaption>Barn House</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/house4.jpg" alt="">
-                    <figcaption>Brick House</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/house5.jpg" alt="">
-                    <figcaption>Renovated</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/house3.jpg" alt="">
-                    <figcaption>Barn House</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/house2.jpg" alt="">
-                    <figcaption>Summer House</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/house5.jpg" alt="">
-                    <figcaption>Renovated</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/house4.jpg" alt="">
-                    <figcaption>Brick House</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <hr>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sapiente in? Quas ipsum cumque porro totam. Cum officia expedita, quod, explicabo sequi repellendus molestiae earum corporis ab animi esse dignissimos?
-                Quis velit odit natus quod rem voluptates, perspiciatis illo ex officiis unde doloribus enim facere possimus voluptatibus, ipsa maiores atque id harum quia dicta nulla itaque! Placeat voluptatum eum veniam?
-                Similique consequuntur doloremque eveniet expedita eligendi corrupti ipsa repudiandae aliquid, sunt dolorem. Veniam optio necessitatibus illum, minima incidunt maiores. Labore ipsam impedit nisi accusamus! Hic autem nihil aspernatur nisi omnis!
-            </p>
+      <section id="projects">
+        <h2>Projects</h2>
+        <hr />
+        <div id="imgCards">
+          <!-- (figure>(img+figcaption))*8 raccourci Emmet-->
+          <figure>
+            <img src="img/house2.jpg" alt="" />
+            <figcaption>Summer House</figcaption>
+          </figure>
+          <figure>
+            <img src="img/house3.jpg" alt="" />
+            <figcaption>Barn House</figcaption>
+          </figure>
+          <figure>
+            <img src="img/house4.jpg" alt="" />
+            <figcaption>Brick House</figcaption>
+          </figure>
+          <figure>
+            <img src="img/house5.jpg" alt="" />
+            <figcaption>Renovated</figcaption>
+          </figure>
+          <figure>
+            <img src="img/house2.jpg" alt="" />
+            <figcaption>Barn House</figcaption>
+          </figure>
+          <figure>
+            <img src="img/house3.jpg" alt="" />
+            <figcaption>Summer House</figcaption>
+          </figure>
+          <figure>
+            <img src="img/house4.jpg" alt="" />
+            <figcaption>Brick House</figcaption>
+          </figure>
+          <figure>
+            <img src="img/house5.jpg" alt="" />
+            <figcaption>Renovated</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sapiente
+          in? Quas ipsum cumque porro totam. Cum officia expedita, quod,
+          explicabo sequi repellendus molestiae earum corporis ab animi esse
+          dignissimos? Quis velit odit natus quod rem voluptates, perspiciatis
+          illo ex officiis unde doloribus enim facere possimus voluptatibus,
+          ipsa maiores atque id harum quia dicta nulla itaque! Placeat
+          voluptatum eum veniam? Similique consequuntur doloremque eveniet
+          expedita eligendi corrupti ipsa repudiandae aliquid, sunt dolorem.
+          Veniam optio necessitatibus illum, minima incidunt maiores. Labore
+          ipsam impedit nisi accusamus! Hic autem nihil aspernatur nisi omnis!
+        </p>
+       
             <div id="archiCards">
                 <!-- (div>(img+h3{John Doe}+h4{Architect}+p{Lorem}+button{Contact}))*4 -->
                 <div class="janedoe">
@@ -124,8 +145,9 @@
         <div class="map"></div>
     </main>
     <footer>
-        <a href="footer.com">powered by footer</a>
+      <a href="footer.com">powered by footer</a>
     </footer>
-</body>
-
+    <script src="script.js"></script>
+ 
+  </body>
 </html>
