@@ -25,8 +25,12 @@ ul {
     padding: 0;
 
 }
-
+nav a{
+    color: black;
+    text-decoration: none;
+}
 li {
+    
     display: inline;
     margin: 5px;
 }
@@ -121,7 +125,7 @@ figure,
 #archiCards div {
     position: relative;
     padding: 16px 10px;
-    height: 540px;
+    height: 640px;
 }
 
 #archiCards button {
@@ -150,13 +154,16 @@ footer {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
-
-#archiCards button {
-    background-color: lightgrey;
-    font-weight: 600;
-    border: none;
-    padding: 5px 0;
+.danstar a,.johndoe a,.janedoe a,.mikeross a{
+    background-color: rgb(187, 182, 182);
+    color: black;
+    padding: 1%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
+
+
 #archiCards img{
     transition-duration: 3s;
 }
@@ -172,6 +179,16 @@ h4 {
     color: rgb(116, 116, 116);
 }
 
+#contact input,#contact textarea{
+    padding: 15px;
+}
+
+
+
+
+
+
+
 /* section formation */
 form {
     display: flex;
@@ -185,11 +202,14 @@ textarea {
 
 }
 
-form button {
+form a {
+    background-color: black;
+    color: white;
     margin: .3rem;
     padding: .5rem;
     border: none;
     width: 150px;
+    text-decoration: none;
 }
 
 .map {
@@ -212,6 +232,7 @@ footer {
 }
 
 footer a {
+   
     color: white;
     text-decoration: none;
 }
