@@ -99,8 +99,9 @@ figure {
 
 figcaption {
     position: absolute;
-    top: 5px;
+    top: 10px;
     z-index: 2;
+    padding: 1%;
 }
 
 figure,
