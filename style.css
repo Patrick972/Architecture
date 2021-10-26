@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -42,7 +43,7 @@ li {
   position: relative;
   padding: 0 auto;
   height: 100vh;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   width: 100%;
 }
 .mySlides {
